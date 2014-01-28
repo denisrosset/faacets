@@ -30,7 +30,7 @@ chshng.save('chsh_collinsgisinform.yaml');
 chshfp.save('chsh_fullform.yaml');
 disp('Loading file again...');
 
-ineq = Faacets.loadInequality('chsh_fullform.bell');
+ineq = Faacets.loadInequality('chsh_fullform.yaml');
 
 disp('And now for the tripartite scenario')
 sliwa = Faacets.scenario('{[2 2] [2 2] [2 2]}')
@@ -42,12 +42,12 @@ gyni = sliwa.inequality(['1/4 P(111|111) + 1/4 P(221|122) + ' ...
                     '1/4 P(122|212) + 1/4 P(212|221)'])
 
 disp('with its canonical form')
-canonicals = gyni.canonical
+canonicals = gyni.canonical;
+canonicals(1)
 
-disp('We can have a look at its symmetry group generators')
-% test that GYNI is symmetric under cyclic permutation of parties
-canonicals(1).symmetryGenerators
+% putting an extra key
 
+gyni.extra.put('gyni', 'for3parties');
 
 disp('and save the inequality to a file.')
-gyni.save('gyni_for3parties.bell');
+gyni.save('gyni.yaml');
