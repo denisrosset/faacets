@@ -1,0 +1,15 @@
+[submodule "alasc"]
+	path = alasc
+	url = git@github.com:denisrosset/alasc.git
+[submodule "core"]
+	path = core
+	url = git@github.com:denisrosset/faacets-core.git
+[submodule "polyta"]
+	path = polyta
+	url = git@github.com:denisrosset/polyta.git
+[submodule "data"]
+	path = data
+	url = git@github.com:denisrosset/faacets-data.git
+[submodule "sources"]
+	path = sources
+	url = git@github.com:denisrosset/faacets-sources.git
