@@ -7,7 +7,7 @@ import com.faacets.literator.plugin.LiteratorPlugin._
 object FaacetsRootBuild extends Build {
   override def settings = super.settings ++ Seq(
     organization := "com.faacets",
-    version := "0.1",
+    version := "0.14",
     javacOptions ++= Seq("-source", "1.6", "-target", "1.6"),
     scalaVersion in ThisBuild := "2.10.3"
   )
